@@ -1,0 +1,204 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+}
+
+header {
+  margin: 0 auto;
+  font-size: 5rem;
+  width: 50%;
+  background: linear-gradient(to right, #ef5350, #f48fb1, #7e57c2, #2196f3, #26c6da, #43a047, #eeff41, #f9a825, #ff5722);
+  -webkit-background-clip: text; 
+  -webkit-text-fill-color: transparent;
+  padding: 10px;
+
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  gap: 5rem;
+  grid-auto-flow: row; 
+  padding-top: 2.5rem;
+ 
+}
+
+
+.container {
+  border-radius: 10px;
+  width: 400px;
+  height: 250px;
+  margin: 0 auto;
+  padding: 20px; 
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+}
+
+button {
+  margin: 10px;
+  border-radius: 5px;
+  border: none;
+  width: 100px;
+  height: 50px;
+  padding: 5px;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 50px;
+}
+
+
+/* pink styles */
+
+/* background color: #f5eee6 */
+.pink {
+  background: #f3d7ca;
+}
+
+.pink h1 { 
+  color: #c86b85;
+}
+
+.pink button { 
+	color: #e6a4b4; 
+  background-color: white;
+}
+
+.pink button:hover, button:focus {
+  background-color: #e6a4b4;
+  color: white;
+}
+
+/* darkmode */
+
+
+.darkmode { 
+	
+  background: #352f44;
+  box-shadow: 1px 1px 1px black;
+}
+	
+.darkmode button { 
+	background: #5c5470; 
+}
+
+.darkmode h1 { 
+	color: #dbd8e3; 
+}
+
+.darkmode button:hover { 
+	background: #2a2438; 
+  color: #dbd8e3;
+}
+
+/* zen garden */
+
+.zen h1 { 
+	color: #f2f9f1; 
+}
+	
+.zen button:hover { 
+	background-color: #ddeedf; 
+}
+
+.zen button { 
+	background: #b6cdbd; 
+}
+
+.zen { 
+	background: #5c715e; 
+}
+
+/* blue */
+
+.blue { 
+	background: #80a3a2; 
+}
+	
+.blue button { 
+	background: #abcecf; 
+}
+
+.blue button:hover { 
+	background: #c4dce0; 
+}
+
+.blue h1 { 
+	color: #daf4f5; 
+}
+
+/* white */
+
+.white { 
+	background: #f7f7f7; 
+  box-shadow: 1px 1px 1px #393e46;
+}
+
+.white h1 { 
+	color: #393e46; 
+}
+
+.white button { 
+	background: #eeeeee; 
+  color: #929aab; 
+
+}
+
+.white button:hover { 
+  box-shadow: 1px 1px 1px gray;
+  color: #393e46;
+}
+
+/* desert */
+
+.desert { 
+	background: #ef962d; 
+}
+
+.desert h1 { 
+	color: #5a3f11; 
+}
+
+.desert button { 
+	background: #faf4f4; 
+  color: #5a3f11; 
+}
+
+.desert button:hover { 
+  background-color: #9c5518;
+}
+
+@media only screen and (max-width: 768px) {
+  .wrapper {
+     display: grid;
+     grid-template-columns: repeat(1, 1fr);
+     grid-gap: 1rem    ;    
+     margin: 0 auto;
+     padding-bottom: 1rem;
+  }
+  header {
+    font-size: 2.5rem;    
+  }
+
+  h1 {
+    font-size: 2.5rem;
+    
+  }
+  .container {
+    padding: 0;
+    height: 100px;
+  }
+  button {
+    margin: auto;
+    align-self: center;
+    justify-self: center;
+  }
+}
+
